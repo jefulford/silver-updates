@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /contact
+id: contact
+---
+
+<h1>Contact</h1>
+	<div class="box-thin">
+		<h2>Email</h2>
+		<h5><a href="mailto:an.ounce.of.silver@gmail.com?subject=From Your Website">an.ounce.of.silver@gmail.com</a></h5>
+
+        <h2>Message Form</h2>
+        <form action="thanks/index.html" netlify-honeypot="bot-field" netlify>
+            <label>
+                Name <span class="required">*</span> 
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                E-mail (not required)
+                <input type="email" name="email">
+            </label>
+            <label>
+                Subject <span class="required">*</span> 
+                <select name="subject" required>
+                    <option value="feature">Feature Request</option>
+                    <option value="bug">Bug Reporting</option>
+                    <option value="questions">Questions & Concerns</option>
+                    <option value="comments">Comments</option>
+                    <option value="misc">Other</option>
+                </select>
+            </label>
+            <label>
+                Message <span class="required">*</span> 
+                <textarea name="message" required>What do you want to tell us?</textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+	</div>
